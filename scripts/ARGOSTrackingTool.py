@@ -5,6 +5,6 @@
 #   the user to view the location of the turtle for a specified
 #   date entered via user input.
 #
-# Author: John Fay (john.fay@duke.edu)
+# Author: Lydie Costes(lydie.costes@duke.edu)
 # Date:   Fall 2021
 #--------------------------------------------------------------
