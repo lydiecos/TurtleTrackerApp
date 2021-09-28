@@ -10,7 +10,7 @@
 #--------------------------------------------------------------
 
 #ask user for the search date
-userDate = input("Specify a date to find sara: ")
+userDate = input("Specify a date to find Sara [M/D/YYYY]: ")
 
 #Create a variable pointing to the data file
 fileName = './data/raw/sara.txt'
@@ -61,6 +61,10 @@ for dateItem in dateDict.items():
     if theDate == userDate:
         #if so, add the key to the list
         matchingKeys.append(theKey)
+        
+#if no records found, tell the user
+if len(matchingKeys) == 0:
+    print(f"Sorry, no records were found on {userDate}.")
         
 #reveal locations for reach key in matchingKeys
 for matchingKey in matchingKeys:
